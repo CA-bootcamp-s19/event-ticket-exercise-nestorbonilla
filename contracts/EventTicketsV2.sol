@@ -39,7 +39,7 @@ contract EventTicketsV2 {
     */
     mapping (uint => Event) events;
 
-    event LogEventAdded(string desc, string website, uint ticketsAvailable, uint eventId);
+    event LogEventAdded(string desc, string url, uint ticketsAvailable, uint eventId);
     event LogBuyTickets(address buyer, uint eventId, uint numTickets);
     event LogGetRefund(address accountRefunded, uint eventId, uint numTickets);
     event LogEndSale(address owner, uint balance, uint eventId);

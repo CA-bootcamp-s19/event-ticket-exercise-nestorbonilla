@@ -97,7 +97,12 @@ contract EventTickets {
     function readEvent()
         public
         view
-        returns(string memory description, string memory website, uint totalTickets, uint sales, bool isOpen)
+        returns(
+            string memory description,
+            string memory website,
+            uint totalTickets,
+            uint sales,
+            bool isOpen)
     {
         description = myEvent.description;
         website = myEvent.website;
